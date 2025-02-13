@@ -39,3 +39,13 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.glass-card, .hero-content, .hero-image').forEach(el => {
     observer.observe(el);
 });
+
+// Effet de parallaxe sur les images
+window.addEventListener('scroll', () => {
+    const parallaxElements = document.querySelectorAll('.parallax');
+    parallaxElements.forEach(element => {
+        const speed = element.dataset.speed || 0.5;
+        const yPos = -(window.pageYOffset * speed);
+        element.style.transform = `translateY(${yPos}px)`;
+    });
+});
