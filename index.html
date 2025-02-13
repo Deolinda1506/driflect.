@@ -6,36 +6,44 @@
     <title>Driflect - Modélisation Numérique</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Add gradient animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js"></script>
 </head>
 <body>
+    <canvas id="gradient-canvas"></canvas>
+    
     <header>
         <nav>
             <div class="logo">
                 <img src="images/logo.png" alt="Driflect Logo">
-                <div class="logo-text">
-                    <h3>Didier BIAOU</h3>
-                    <p>Ingénieur en Génie Civil et Modélisation Numérique</p>
-                </div>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
             </div>
             <ul class="nav-links">
-                <li><a href="#hero">Accueil</a></li>
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#values">Valeurs</a></li>
-                <li><a href="#contact" class="contact-btn">Contact</a></li>
+                <li><a href="#contact" class="nav-cta">Démarrer</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="hero">
-        <h1>RÉVOLUTIONNEZ VOS PROJETS AVEC LA MODÉLISATION NUMÉRIQUE</h1>
-        <p>Innovation • Excellence • Performance</p>
-    </section>
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>
+                    <span class="gradient-text">Révolutionnez</span>
+                    vos projets avec la modélisation numérique
+                </h1>
+                <p class="hero-subtitle">Solutions innovantes pour l'ingénierie civile de demain</p>
+                <div class="cta-group">
+                    <a href="#contact" class="primary-cta">Commencer un projet</a>
+                    <a href="#services" class="secondary-cta">Découvrir nos services</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/3d-model.png" alt="3D Model" class="floating">
+            </div>
+        </section>
+    </main>
 
     <section id="presentation" class="section-padding">
         <div class="container">
